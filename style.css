@@ -1,0 +1,331 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif; 
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    background-color: black;
+    color: black;
+}
+
+/* Global */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow:hidden;
+    padding-bottom: 25px;
+}
+
+.slideshow-container{
+  width: 90%;
+}
+
+.color{
+    padding: 15px;
+    background: goldenrod;
+    color:black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header*/
+header{
+    background: black;
+    color: darksalmon;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom: goldenrod 5px solid;
+}
+
+header a{
+    color: goldenrod;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 16px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float:left;
+    display: inline;
+    padding: 5px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+} 
+
+header a:hover {
+    background-color: tan;
+    color: black;
+    font-weight: bold;
+  }
+
+header .highlight, header .current a{
+    color: tan;
+}
+
+/* Front Shwcase Image*/
+#showcase{
+    min-height: 1050px;
+    background:url('images/DSC03522.JPG') no-repeat 0 ; 
+    background-size: 100%;
+    color: goldenrod;  
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+#showcase p{
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+
+/* Booking*/
+
+#booking{
+    padding: 15px;
+    height: 130px;
+    font-weight: bold ;
+    color: black ;
+    background: goldenrod;
+    text-align: center;
+}
+
+/* Button */
+.button1 {
+    background-color: tan;
+    border: 2px, solid, #422800;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button1:hover {
+    background-color: whitesmoke;
+  }
+  
+  .button1:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button1 {
+      min-width: 120px;
+      padding: 0 100px;
+    }
+  }
+  
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+    color: tan;
+    font-size: 18px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    align-items: center;
+}
+
+#boxes ul{
+    text-align: left;
+    display: inline-block;
+}
+
+#boxes p1{
+    font-weight: bold;
+}
+
+/* Contact Form */
+
+/* Sidebar*/
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Email Page */
+
+#email h1{
+  color: tan;
+  font-size: 20px;
+}
+
+#email p1{
+  color: tan;
+  font-size: 18px;
+}
+
+
+#email span{
+  color: tan;
+  font-weight: bold;
+}
+
+/* Main-col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+article#message{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 30%;
+}
+
+/* Gallery Settings and Page*/
+
+#gallery_title h1{
+  color: tan;
+
+}
+
+.gallery {
+  margin: 10px 50px;
+}
+
+.gallery img {
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(50%);
+  transition: 1s;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.container_gallery{
+  margin: auto;
+  overflow:hidden;
+  padding-bottom: 5px;
+}
+
+/* Form Inputs */
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 3px solid goldenrod;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: goldenrod;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, tan, goldenrod);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: tan;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+
+span{
+    color: tan;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span1{
+  color: tan;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+span2{
+  color: tan;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: goldenrod;
+    background-color: black;
+    text-align: center;
+}
